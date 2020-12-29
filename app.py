@@ -10,7 +10,6 @@ import streamlit as st
 
 
 account_id = st.text_input('Account ID')
-account_id = "612"
 userkey = {"TiveApiKey": "eaabf233f89146789a71a69857ede984","x-tive-account-id": account_id}
 
 response_shipment = requests.get("https://api2.prod1.tive.co/api/v2/shipment/status", params = {"States" : ["Active"]}, headers = userkey)
